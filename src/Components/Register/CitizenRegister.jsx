@@ -229,7 +229,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="contact_person">Mother Name<span style={{ color: "#ff0000" }}></span></label>
+                    <label htmlFor="contact_person" className="focused_label">Mother Name<span style={{ color: "#ff0000" }}></span></label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][contact_mother_name]"
@@ -247,7 +247,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="contact_person">Middle Name<span style={{ color: "#ff0000" }}></span></label>
+                    <label htmlFor="contact_person" className="focused_label">Middle Name<span style={{ color: "#ff0000" }}></span></label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][contact_mname]"
@@ -334,7 +334,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="street">Street/Locality</label>
+                    <label htmlFor="street" className="focused_label">Street/Locality</label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][street]"
@@ -352,7 +352,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="city">City</label>
+                    <label htmlFor="city" className="focused_label">City</label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][city]"
@@ -370,7 +370,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="pin_code">Pin Code</label>
+                    <label htmlFor="pin_code" className="focused_label">Pin Code</label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][pincode]"
@@ -388,7 +388,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="state">Select&nbsp;State<span style={{ color: "#ff0000" }}>*</span></label>
+                    <label htmlFor="state" className="focused_label">Select&nbsp;State<span style={{ color: "#ff0000" }}>*</span></label>
                     <div className="input select">
                       <select name="data[citizenregistration][state_id]" id="state_id" className="effect-16">
                         <option value=""></option>
@@ -438,7 +438,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="district">
+                    <label htmlFor="district" className="focused_label">
                       Select&nbsp;District<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input select">
@@ -453,7 +453,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="taluka">
+                    <label htmlFor="taluka" className="focused_label">
                       Select&nbsp;Taluka<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input select">
@@ -484,7 +484,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="office" id="lbl_licence_no">
+                    <label htmlFor="office" id="lbl_licence_no" className="focused_label">
                       Licence Number<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input text">
@@ -545,7 +545,7 @@ function CitizenRegistration() {
               <div className="login_form row" id="">
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="e_mail">Email Id</label>
+                    <label htmlFor="e_mail" className="focused_label">Email Id</label>
                     <div className="input text">
                       <input
                         name="data[citizenregistration][email_id]"
@@ -564,7 +564,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="mobile_no">
+                    <label htmlFor="mobile_no" className="focused_label">
                       Mobile No.<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input tel">
@@ -586,7 +586,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="id_type" className="focused_label">
+                    <label htmlFor="id_type" className="focused_label" >
                       Select&nbsp;Id Proof<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input select">
@@ -607,7 +607,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="pan_no" id="pan_lable">
+                    <label htmlFor="pan_no" id="pan_lable" className="focused_label">
                       Id Proof No.<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div id="pantxt">
@@ -680,7 +680,7 @@ function CitizenRegistration() {
               <div className="login_form row" id="">
                 <div className="col-md-4">
                   <div className="input-effect mb-5">
-                    <label htmlFor="user_name">
+                    <label htmlFor="user_name" className="focused_label">
                       Username<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input text">
@@ -703,7 +703,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect mb-5">
-                    <label htmlFor="password">
+                    <label htmlFor="password" className="focused_label">
                       Password<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input password">
@@ -730,7 +730,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect mb-5">
-                    <label htmlFor="re_user_pass">
+                    <label htmlFor="re_user_pass" className="focused_label">
                       Confirm Your Password<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input password">
@@ -757,7 +757,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="captcha">
+                    <label htmlFor="captcha" className="focused_label">
                       Captcha<span style={{ color: "#ff0000" }}>*</span>
                     </label>
                     <div className="input text">
@@ -816,7 +816,7 @@ function CitizenRegistration() {
 
                 <div className="col-md-4">
                   <div className="input-effect">
-                    <label htmlFor="qst_ans">Your Answer</label>
+                    <label htmlFor="qst_ans" className="focused_label">Your Answer</label>
                     <div className="input password">
                       <input
                         name="data[citizenregistration][hint_answer]"
