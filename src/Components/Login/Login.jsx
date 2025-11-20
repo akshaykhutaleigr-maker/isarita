@@ -3,6 +3,7 @@ import loginimg from '../../img/images/login.avif';
 import { useState } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -354,9 +355,9 @@ const Login = () => {
 
                         {/* REGISTER */}
                         <div className="col-12 pt-4">
-                          <a href="../Users/citizenregistration_mh">
-                            New user? click here to Register
-                          </a>
+                          <Link to="/Register">
+                          New user? click here to Register
+                        </Link>
                         </div>
                       </div>
                     </form>
