@@ -1,8 +1,8 @@
 import React from "react";
 import loginimg from '../../img/images/login.avif';
 import { useState } from "react";
-import { Link } from "react-router-dom";
-
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Login = () => {
 
@@ -79,6 +79,8 @@ const Login = () => {
                         </div>
 
                         {/* USERNAME */}
+                         {logintype === "username" && (
+                            <>
                         <div className="col-12 username_div">
                           <div className="input-effect mb-4">
                             <label className="uname">
@@ -155,8 +157,11 @@ const Login = () => {
                             ></span>
                           </div>
                         </div>
+                        </>)}
 
                         {/* MOBILE NUMBER */}
+                         {logintype === "mobile" && (
+                            <>
                         <div className="col-12 mobile_div">
                           <div className="input-effect">
                             <label className="uname">
@@ -175,6 +180,52 @@ const Login = () => {
                             <span id="mobile_error" className="form-error" />
                           </div>
                         </div>
+                    <div className="col-12 username_div">
+                          <div className="input-effect mb-4">
+                            <label className="pass">
+                              Password<sup className="text-danger">*</sup>
+                            </label>
+                            <div className="input password required">
+                              <input
+                                name="data[User][password]"
+                                className="effect-16"
+                                id="password"
+                                type="password"
+                                required
+                              />
+                            </div>
+
+                            <span id="showpass">
+                              <i className="fa-regular fa-eye"></i>
+                            </span>
+                            <span id="hidepass">
+                              <i className="fa-regular fa-eye-slash"></i>
+                            </span>
+
+                            <span className="focus-border focus_p"></span>
+
+                            <a
+                              href="/Citizenentry/forgotpassword_citizen"
+                              className="z-9"
+                            >
+                              Forgot Password?
+                            </a>
+
+                            <input
+                              type="hidden"
+                              name="data[User][csrftoken]"
+                              id="csrftoken"
+                              value="27611820081220"
+                            />
+
+                            <span
+                              id="password_error"
+                              className="form-error"
+                            ></span>
+                          </div>
+                        </div>
+                        </>
+                    )}
 
                         {/* CAPTCHA */}
                         {/* <div className="col-12">
@@ -286,7 +337,7 @@ const Login = () => {
                               type="button"
                               id="btnSubmit"
                               name="btnSubmit"
-                              className="btn primary"
+                              className="btn btn-sm primary"
                             //   style={}
                             >
                               Login

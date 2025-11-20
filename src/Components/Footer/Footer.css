@@ -12,7 +12,7 @@ section#main_content.landing_page {
     background-image: url(../../img/images/bg.avif);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 70px 0px;
+    padding: 150px 0px;
     text-align: center;
     min-height: calc(-250px + 100vh);
     position: relative;

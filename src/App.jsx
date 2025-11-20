@@ -5,6 +5,8 @@ import Registerform from "./Components/Register/Registerform";
 import Header from "./Components/header/Header";
 import Footer from "./Components/Footer/Footer";
 import Partners from "./Components/Partners/Partners";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
