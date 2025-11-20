@@ -1,6 +1,8 @@
 import React from "react";
 import loginimg from '../../img/images/login.avif';
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
 
@@ -301,9 +303,9 @@ const Login = () => {
 
                         {/* REGISTER */}
                         <div className="col-12 pt-4">
-                          <a href="../Users/citizenregistration_mh">
-                            New user? click here to Register
-                          </a>
+                           <Link to="/register">
+                             New user? click here to Register
+                          </Link>
                         </div>
                       </div>
                     </form>
