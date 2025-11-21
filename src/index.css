@@ -665,7 +665,7 @@ span.head_info {
 div#steps_old {
     display: flex;
     justify-content: space-around;
-    padding: 0px 45px;
+    padding: 28px 45px;
 }
 
 div#steps_old .step {
