@@ -9,6 +9,8 @@ import { getEmail, getMobile, getUsername } from "../../api/Users/getUsers";
 
 
 
+
+
 function CitizenRegistration() {
 
   const [contactFname, setContactFname] = useState("");
@@ -143,7 +145,7 @@ const [hintAnswer, setHintAnswer] = useState("");
   body: JSON.stringify(payload),
 });
 if (res.ok) {
-  navigate("/"); 
+  navigate("/", { state: { message: "Registration Successful!" } });
 } else {
   alert(data.error);
 }
@@ -151,7 +153,7 @@ if (res.ok) {
 
 } catch (error) {
   console.error(error);
-  alert("⚠ Server error, try again!");
+  alert("Server error, try again!");
 }
 
   };

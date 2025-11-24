@@ -4,10 +4,12 @@ import { useState } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Login = () => {
 
     const [logintype, SetLogintype] = useState("username");
+      const location = useLocation();
 
   return (
     <div>
@@ -43,6 +45,13 @@ const Login = () => {
                       <div className="login_form row">
                         <div className="col-12">
                           <h3 style={{ color: "#0b3a82", marginTop: "20px" }}>
+                            {/* Success message inside div class */}
+                              {location.state?.message && (
+                                <div className="alert alert-success">
+                                  {location.state.message}
+                                </div>
+                              )}
+
                             Citizen Login
                           </h3>
                         </div>
