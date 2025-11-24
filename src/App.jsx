@@ -1,20 +1,29 @@
-// import Header from "./Components/header/Header"
-import Header from "./Components/header/Header"
-import Footer from "./Components/Footer/Footer"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./Components/header/Header";
+import Footer from "./Components/Footer/Footer";
 import Partners from "./Components/Partners/Partners";
 import Login from "./Components/Login/Login";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import CitizenRegister from "./Components/Register/CitizenRegister";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  return(
+  return (
     <>
-    <Header />
-    <Login />
-    <Partners />
-    <Footer />
+      <Header />
+
+      {/* Routes must wrap Route components */}
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<CitizenRegister />} />
+      </Routes>
+
+      <Partners />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;
