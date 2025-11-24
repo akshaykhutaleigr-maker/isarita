@@ -15,10 +15,7 @@ const Login = () => {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="content_div_landing my-3 p-0">
-                <div
-                  className="row m-0"
-                  style={{ boxShadow: "0px 0px 10px 1px lightgray" }}
-                >
+                <div className="row m-0" style={{ boxShadow: "0px 0px 10px 1px lightgray" }}>
                   {/* LEFT IMAGE */}
                   <div className="col-lg-6 d-none d-lg-block bg-white">
                     <div>
@@ -29,7 +26,6 @@ const Login = () => {
                       />
                     </div>
                   </div>
-
                   {/* RIGHT FORM */}
                   <div className="col-lg-6">
                     <form
@@ -45,7 +41,6 @@ const Login = () => {
                             Citizen Login
                           </h3>
                         </div>
-
                         {/* LOGIN TYPE */}
                         <div className="col-12 mt-3" id="logintype">
                           <div className="text-start">
@@ -62,7 +57,6 @@ const Login = () => {
                               <label htmlFor="usernamebased" className="me-3">
                                 Username
                               </label>
-
                               <input
                                 type="radio"
                                 name="logintype"
@@ -77,7 +71,6 @@ const Login = () => {
                             <span id="logintype_error" className="form-error" />
                           </div>
                         </div>
-
                         {/* USERNAME */}
                          {logintype === "username" && (
                             <>
@@ -111,7 +104,6 @@ const Login = () => {
                             ></span>
                           </div>
                         </div>
-
                         {/* PASSWORD */}
                         <div className="col-12 username_div">
                           <div className="input-effect mb-4">
@@ -127,30 +119,25 @@ const Login = () => {
                                 required
                               />
                             </div>
-
                             <span id="showpass">
                               <i className="fa-regular fa-eye"></i>
                             </span>
                             <span id="hidepass">
                               <i className="fa-regular fa-eye-slash"></i>
                             </span>
-
                             <span className="focus-border focus_p"></span>
-
                             <a
                               href="/Citizenentry/forgotpassword_citizen"
                               className="z-9"
                             >
                               Forgot Password?
                             </a>
-
                             <input
                               type="hidden"
                               name="data[User][csrftoken]"
                               id="csrftoken"
                               value="27611820081220"
                             />
-
                             <span
                               id="password_error"
                               className="form-error"
@@ -158,7 +145,6 @@ const Login = () => {
                           </div>
                         </div>
                         </>)}
-
                         {/* MOBILE NUMBER */}
                          {logintype === "mobile" && (
                             <>
@@ -194,7 +180,6 @@ const Login = () => {
                                 required
                               />
                             </div>
-
                             <span id="showpass">
                               <i className="fa-regular fa-eye"></i>
                             </span>
@@ -226,7 +211,6 @@ const Login = () => {
                         </div>
                         </>
                     )}
-
                         {/* CAPTCHA */}
                         {/* <div className="col-12">
                           <div
@@ -278,7 +262,6 @@ const Login = () => {
                             />
                           </div>
                         </div> */}
-
                         {/* OTP DIV */}
                         {/* <div className="col-12">
                           <div
@@ -316,14 +299,12 @@ const Login = () => {
                             Resend OTP
                           </span>
                         </div> */}
-
                         {/* BUTTONS */}
                         <div className="col-12">
                           <div className="button_div">
                             <button type="button" className="btn secondary">
                               Cancel
                             </button>
-
                             {/* <button
                               type="submit"
                               id="btnotp"
@@ -332,7 +313,6 @@ const Login = () => {
                             >
                               Get OTP
                             </button> */}
-
                             <button
                               type="button"
                               id="btnSubmit"
@@ -342,7 +322,6 @@ const Login = () => {
                             >
                               Login
                             </button>
-
                             <input
                               type="hidden"
                               value="3ed2007234c5cacb7fe4c2031cf31857"
@@ -351,7 +330,6 @@ const Login = () => {
                             />
                           </div>
                         </div>
-
                         {/* REGISTER */}
                         <div className="col-12 pt-4">
                           <a href="../Users/citizenregistration_mh">
