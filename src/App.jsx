@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import Partners from "./Components/Partners/Partners";
 import Login from "./Components/Login/Login";
 import CitizenRegister from "./Components/Register/CitizenRegister";
-
+import Welcome from "./Components/Welcome/Welcome";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<CitizenRegister />} />
+        <Route path="/welcome" element={<Welcome />} />
       </Routes>
 
       <Partners />
