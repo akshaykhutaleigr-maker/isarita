@@ -65,8 +65,6 @@ const [hintAnswer, setHintAnswer] = useState("");
     }
     try {
       const data = await getEmail(email);
-      console.log(data);
-
       if (data.error) {
         setEmailError("Email already registered");
         setEmail("");
@@ -79,15 +77,12 @@ const [hintAnswer, setHintAnswer] = useState("");
   };
 
   const Checkmobileno = async () => {
-
     if (!mobileNo) {
       setMobileError("Mobile Number is required");
       return;
     }
     try {
       const data = await getMobile(mobileNo);
-
-
       if (data.error) {
         setMobileError("Mobile Number already registered");
         setMobile("");
@@ -107,7 +102,6 @@ const [hintAnswer, setHintAnswer] = useState("");
     }
     try {
       const data = await getUsername(username);
-
       if (data.error) {
         setusernameError("Username already registered");
         setUsername("");
@@ -124,11 +118,9 @@ const [hintAnswer, setHintAnswer] = useState("");
     const hintQuestionInt = hintQuestion ? parseInt(hintQuestion) : null;
 
     const payload = {
-        contact_fname: contactFname,
-        contact_mname: contactMName,
-        contact_lname: contactLName,
-       
-    
+      contact_fname: contactFname,
+      contact_mname: contactMName,
+      contact_lname: contactLName,
       email_id: email,
       mobile_no: mobileNo,
       user_name: username,
@@ -137,6 +129,7 @@ const [hintAnswer, setHintAnswer] = useState("");
       hint_answer: hintAnswer,
       // add all other form fields here
     };
+    
 
     try {
   const res = await fetch("http://localhost:4000/register", {
