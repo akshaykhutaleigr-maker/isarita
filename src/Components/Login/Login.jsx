@@ -52,12 +52,9 @@ const Login = () => {
                   className="row m-0"
                   style={{ boxShadow: "0px 0px 10px 1px lightgray" }}
                 >
-                  {/* LEFT IMAGE */}
                   <div className="col-lg-6 d-none d-lg-block bg-white">
                     <img src={loginimg} style={{ width: "100%" }} alt="" />
                   </div>
-
-                  {/* RIGHT FORM */}
                   <div className="col-lg-6">
                     <form
                       id="User"
@@ -76,27 +73,7 @@ const Login = () => {
                             Citizen Login
                           </h3>
                         </div>
-
-                        {/* LOGIN TYPE */}
-                        <div className="col-12 mt-3" id="logintype">
-                          <label>Login with</label>
-                          <div>
-                            <input
-                              type="radio"
-                              name="logintype"
-                              checked={logintype === "username"}
-                              onChange={() => SetLogintype("username")}
-                            />
-                            <label className="me-3">Username</label>
-
-                            <input
-                              type="radio"
-                              name="logintype"
-                              onChange={() => SetLogintype("mobile")}
-                            />
-                            <label className="me-3">Mobile Number</label>
-                          </div>
-                        </div>
+                       
 
                         {/* USERNAME LOGIN */}
                         {logintype === "username" && (

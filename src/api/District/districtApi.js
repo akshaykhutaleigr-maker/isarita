@@ -1,10 +1,8 @@
 export const getDistrict = async () => {
-  const response = await fetch("http://localhost:4000/getDistrict",{
- method:"POST",
-  headers: { "Content-Type": "application/json" },
-  
-  });
-  
-  return response.json();
+  try {
+    const response = await fetch("http://localhost:8000/districts");
+    return await response.json();
+  } catch (error) {
+    console.error("Fetch Error:", error);
+  }
 };
-
